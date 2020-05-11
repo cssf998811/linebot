@@ -25,8 +25,8 @@ if (strtolower($message['text']) == "sticker" || $message['text'] == "貼圖" ||
         'messages' => array(
             array(
                 'type' => 'sticker', // 訊息類型 (貼圖)
-                'packageId' => 1, // 貼圖包 ID
-                'stickerId' => 1 // 貼圖 ID
+                'packageId' => 2, // 貼圖包 ID
+                'stickerId' => 157 // 貼圖 ID
             )
         )
     ));

@@ -50,8 +50,8 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
         'messages' => array(
             array(
                 'type' => 'imagemap', // 訊息類型 (圖片地圖)
-                'baseUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example', // 圖片網址 (可調整大小 240px, 300px, 460px, 700px, 1040px)
-                'altText' => 'Example imagemap', // 替代文字
+                'baseUrl' => 'https://i.picsum.photos/id/590/1040/1040.jpg', // 圖片網址 (可調整大小 240px, 300px, 460px, 700px, 1040px)
+                'altText' => '圖片地圖', // 替代文字
                 'baseSize' => array(
                     'height' => 1040, // 圖片寬
                     'width' => 1040 // 圖片高
@@ -59,7 +59,7 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
                 'actions' => array(
                     array(
                         'type' => 'uri', // 類型 (網址)
-                        'linkUri' => 'https://github.com/GoneTone/line-example-bot-php', // 連結網址
+                        'linkUri' => 'https://www.instagram.com/70_yaannnn/?hl=zh-tw', // 連結網址
                         'area' => array(
                             'x' => 0, // 點擊位置 X 軸
                             'y' => 0, // 點擊位置 Y 軸
@@ -69,7 +69,7 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
                     ),
                     array(
                         'type' => 'message', // 類型 (用戶發送訊息)
-                        'text' => 'Hello', // 發送訊息
+                        'text' => '你好我是班尼', // 發送訊息
                         'area' => array(
                             'x' => 520, // 點擊位置 X 軸
                             'y' => 0, // 點擊位置 Y 軸
