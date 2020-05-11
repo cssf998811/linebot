@@ -24,8 +24,8 @@ if (strtolower($message['text']) == "image" || $message['text'] == "圖片") {
         'messages' => array(
             array(
                 'type' => 'image', // 訊息類型 (圖片)
-                'originalContentUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 回復圖片
-                'previewImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg' // 回復的預覽圖片
+                'originalContentUrl' => 'https://banny-linebot.herokuapp.com/img/coffin_dancer.jpg', // 回復圖片
+                'previewImageUrl' => 'https://banny-linebot.herokuapp.com/img/coffin_dancer.jpg' // 回復的預覽圖片
             )
         )
     ));
