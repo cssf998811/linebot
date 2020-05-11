@@ -50,7 +50,7 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
         'messages' => array(
             array(
                 'type' => 'imagemap', // 訊息類型 (圖片地圖)
-                'baseUrl' => 'https://i.picsum.photos/id/590/1040/1040.jpg', // 圖片網址 (可調整大小 240px, 300px, 460px, 700px, 1040px)
+                'baseUrl' => 'https://banny-linebot.herokuapp.com/img/1040.png', // 圖片網址 (可調整大小 240px, 300px, 460px, 700px, 1040px)
                 'altText' => '圖片地圖', // 替代文字
                 'baseSize' => array(
                     'height' => 1040, // 圖片寬
