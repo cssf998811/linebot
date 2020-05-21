@@ -29,7 +29,7 @@ if (strtolower($message['text']) == "text" || $message['text'] == "文字"){
     ));
 }
 //help
-if (strtolower($message['text']) == "help" || $message['text'] == "幫助""){
+if (strtolower($message['text']) == "help" || $message['text'] == "幫助"){
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
