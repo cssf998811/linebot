@@ -41,12 +41,17 @@ if (strtolower($message['text']) == "help" || $message['text'] == "幫助"){
     ));
 }
 //抽籤程式
-if (strtolower($message['text']) == "數位系誰最帥"){
+function startsWith($string, $startString) { 
+    $len = strlen($startString);
+    return (substr($string, 0, $len) === $startString); 
+}
+
+if (startsWith($message['text'], "數位系誰")){
 
     $people = array('戴泓名', '小豬', '阿明', '金城武', '阿杰');
     $num = rand(0, count($people) - 1 );
 
-    $msg = "今天最帥的是" . $people[$num];
+    $msg = "今天的幸運兒是" . $people[$num];
 
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
