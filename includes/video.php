@@ -24,7 +24,7 @@ if (strtolower($message['text']) == "video" || $message['text'] == "視頻" || $
         'messages' => array(
             array(
                 'type' => 'video', // 訊息類型 (影片)
-                'originalContentUrl' => 'https://banny-linebot.herokuapp.com/img/coffin_dance.mp4', // 回復影片
+                'originalContentUrl' => 'https://banny-linebot.herokuapp.com/img/coffin_dance%20.mp4', // 回復影片
                 'previewImageUrl' => 'https://banny-linebot.herokuapp.com/img/coffin_dancer.jpg' // 回復的預覽圖片
             )
         )

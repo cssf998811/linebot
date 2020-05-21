@@ -28,4 +28,34 @@ if (strtolower($message['text']) == "text" || $message['text'] == "文字"){
         )
     ));
 }
+//help
+if (strtolower($message['text']) == "help" || $message['text'] == "幫助""){
+    $client->replyMessage(array(
+        'replyToken' => $event['replyToken'],
+        'messages' => array(
+            array(
+                'type' => 'text', // 訊息類型 (文字)
+                'text' => '你可以輸入文字、圖片、音樂、影片、位置、貼圖' // 回復訊息
+            )
+        )
+    ));
+}
+//抽籤程式
+if (strtolower($message['text']) == "數位系誰最帥"){
+
+    $people = array('戴泓名', '小豬', '阿明', '金城武', '阿杰');
+    $num = rand(0, count($people) - 1 );
+
+    $msg = "今天最帥的是" . $people[$num];
+
+    $client->replyMessage(array(
+        'replyToken' => $event['replyToken'],
+        'messages' => array(
+            array(
+                'type' => 'text', // 訊息類型 (文字)
+                'text' => $msg // 回復訊息
+            )
+        )
+    ));
+}
 ?>
